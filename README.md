@@ -5,6 +5,7 @@
     - [Git](https://git-scm.com/downloads)
     - [Docker](https://www.docker.com/)
     - [Docker-compose](https://docs.docker.com/compose/install/)
+    - [Nodejs(15.x.x 이상)](https://nodejs.org/ko/)
 
 ### Installation
 ```
