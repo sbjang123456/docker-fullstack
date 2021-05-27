@@ -9,11 +9,11 @@ function App() {
 
     useEffect(() => {
         (async () => {
-            const { data } = await axios.get('/api/list');
-            console.log(data);
+            const { data: resultList } = await axios.get('/api/list');
+            setList(resultList);
 
-            const { data: test } = await axios.get('/api/item');
-            console.log(test);
+            const { data: result } = await axios.get('/api/item');
+            setItem(result);
         })();
     }, []);
 
@@ -33,7 +33,13 @@ function App() {
                     Learn React
                 </a>
 
-                <div>112</div>
+                <div>List</div>
+                {list.map((item, idx) => (
+                    <div key={idx}>{`${item.id}/${item.name}`}</div>
+                ))}
+
+                <div>item</div>
+                <div>{`${item.id}/${item.name}`}</div>
             </header>
 
         </div>
