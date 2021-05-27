@@ -1,0 +1,25 @@
+{
+  "name": "docker-fullstack",
+  "version": "1.0.0",
+  "description": "> docker 를 활용한 React 및 Express 컨테이너 발행",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd ./packages/client && npm run start",
+    "server": "cd ./packages/server && npm run server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbjang123456/docker-fullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbjang123456/docker-fullstack/issues"
+  },
+  "homepage": "https://github.com/sbjang123456/docker-fullstack#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
