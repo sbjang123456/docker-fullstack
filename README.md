@@ -10,7 +10,10 @@
 ### Installation
 ```
 git clone https://github.com/sbjang123456/docker-fullstack.git
-cd docker-fullstack
+cd docker-fullstack/packages/client
+npm install
+npm run build
+cd ../../
 docker-compose up -d
 ```
 
